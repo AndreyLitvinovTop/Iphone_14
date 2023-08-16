@@ -1,0 +1,398 @@
+.body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+
+.header{
+    padding: 32px 0;
+    background-color: #0A0A0A;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.header.scroll{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-ul{
+    display: flex;
+}
+
+.header-li{
+    margin-right: 30px;
+}
+
+.header-a{
+    font-size: 24px;
+    color: #717171;
+    font-weight: 400;
+}
+
+.logo{
+    width: 40px;
+    height: 48px;
+}
+
+/* Главная страница */
+
+.main{
+    padding: 70px 0 40px 0;
+    background-color: #F5F5F7;
+}
+
+.main-title{
+    font-size: 64px;
+    color: #490E84;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateX(-200px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.main-title.scroll{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main-image{
+    display: block;
+    width: 935px;
+    height: 655px;
+    margin: 40px auto 0 auto;
+}
+
+.main-button{
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 350px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    background-color: #490E84;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    transform: translateY(-100px);
+    transition: 1s;
+    opacity: 0;
+}
+
+.main-button.scroll{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Основная информация */
+
+.information{
+   padding-top: 85px;
+}
+
+/* Что нового */
+
+.information-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #717171;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.new-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new_content{
+    max-width: 560px;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.new_content.scroll{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.new-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #0A0A0A;
+    margin-top: 30px;
+}
+
+.new-text:nth-child(1){
+    margin-top: 0;
+}
+
+.new-text span{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.new-image{
+    width: 350px;
+    height: 370px;
+    margin-top: 25px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.new-image.scroll{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Цвета */
+
+.colors{
+    margin-top: 150px;
+}
+
+.colors-content{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 80px;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.colors-content.scroll{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.items-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0A0A0A;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.items-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #0A0A0A;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Заказать */
+
+.order{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.order-form{
+    padding: 138px 0;
+    background-color: #574B63;
+}
+
+.order-image{
+    height: 600px;
+}
+
+.order-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.order-inputs{
+    margin-top: 62px;
+}
+
+.order-input{
+    background: transparent;
+    border-bottom: 1px solid #F5F5F5;
+    width: 400px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.order-input:nth-child(1){
+    margin: 0 auto;
+}
+
+.order-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.order-button{
+    display: block;
+    width: 240px;
+    margin: 30px auto 0 auto;
+    background-color: #fff;
+    color: #490E84;
+    padding: 16px 0;
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Подвал */
+
+.footer{
+    padding: 40px 0;
+    background-color: #0A0A0A;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #717171;
+}
+
+.footer-a{
+    font-size: 24px;
+    font-weight: 400;
+    color: #717171;
+}
+
+/* Адаптив */
+
+@media(max-width: 1200px){
+    .container{
+        width: 992px;
+    }
+    .colors-content{
+        gap: 10px;
+    }
+    .order-form{
+        padding: 120px 0;
+    }
+    .order-image{
+        height: 575px;
+    }
+}
+@media(max-width: 992px){
+    .container{
+        width: 768px;
+    }
+    .main-image{
+        width: 800px;
+    }
+    .new-image{
+        display: none;
+    }
+    .new_content{
+        display: block;
+        margin: auto;
+    }
+    .colors{
+        margin-top: 100px;
+    }
+    .colors-content{
+        grid-template-columns: repeat(2, 240px);
+        gap: 40px 80px;
+        justify-content: center;
+    }
+    .order{
+        grid-template-columns: 1fr;
+    }
+    .order-image{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        width: 576px;
+    }
+    .header-ul{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }
+    .main-image{
+        width: 100%;
+        height: 500px;
+    }
+    .information{
+        padding: 50px 0 0 0;
+    }
+}
+@media(max-width: 576px){
+    .container{
+        width: 320px;
+    }
+    .main{
+        padding: 40px 0;
+    }
+    .main-title{
+        font-size: 42px;
+    }
+    .main-image{
+        height: 350px;
+    }
+    .main-button{
+        width: 300px;
+    }
+    .colors-content{
+        grid-template-columns: 240px;
+    }
+    .footer-content > .logo{
+        display: none;
+    }
+    .footer-text{
+        font-size: 14px;
+    }
+    .footer-a{
+        font-size: 14px;
+    }
+}
+@media(max-width: 320px){
+    .container{
+        width: 320px;
+    }
+}
